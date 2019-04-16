@@ -4,8 +4,8 @@ from django.db import models
 
 
 class User(models.Model):
-    name = models.CharField(max_length=100)
-    uid = models.CharField(max_length=100)
+    name = models.CharField(max_length=200)
+    uid = models.CharField(max_length=100, unique=True)
     followers = models.IntegerField(default=0)
 
     def __str__(self):
@@ -15,7 +15,7 @@ class User(models.Model):
 class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     message = models.TextField()
-    postid = models.CharField(max_length=50)
+    postid = models.CharField(max_length=100, unique=True)
     created = models.DateTimeField('created time')
     likes = models.IntegerField(default=0)
     comments = models.IntegerField(default=0)
