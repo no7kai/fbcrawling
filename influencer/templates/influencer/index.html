@@ -1,0 +1,7 @@
+{% if top_users %}
+    {% for user in top_users %}
+    <h1>user.name</h1>
+    {% endfor %}
+{% else %}
+    <p>No user available</p>
+{% endif %}
