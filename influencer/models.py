@@ -21,3 +21,9 @@ class Post(models.Model):
     comments = models.IntegerField(default=0)
     shares = models.IntegerField(default=0)
     hashtag = models.TextField()
+
+    def __str__(self):
+        return self.postid
+
+    class Meta:
+        ordering = ['-created']
