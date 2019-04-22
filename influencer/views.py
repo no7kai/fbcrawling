@@ -1,14 +1,19 @@
 from django.shortcuts import render, get_object_or_404
 from .models import User, Post
-from .forms import SearchIdForm, SearchNameForm
+from .forms import SearchIdForm, SearchNameForm, SearchPost, UpdateUserForm
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.core.paginator import Paginator
+import os
+from .updateuser import updateuser
 # Create your views here.
 
 
 def users(request):
-    top_users = User.objects.order_by('-followers')[:10]
-    context = {'top_users': top_users}
+    top_users = User.objects.order_by('-followers')[:50]
+    paginator = Paginator(top_users, 15)
+    page = request.GET.get('page')
+    context = {'top_users': paginator.get_page(page)}
     return render(request, 'influencer/index.html', context)
 
 
@@ -24,7 +29,10 @@ def search_by_id(request):
         form = SearchIdForm(request.POST)
         if form.is_valid():
             uid = form.cleaned_data['uid']
-            user = get_object_or_404(User, uid=uid)
+            try:
+                user = User.objects.get(uid=uid)
+            except User.DoesNotExist:
+                return HttpResponseRedirect(reverse('influencer:updateuser'))
             return HttpResponseRedirect(reverse('influencer:personal', args=(user.id,)))
     else:
         form = SearchIdForm()
@@ -46,3 +54,46 @@ def search_by_name(request):
     return render(request, 'influencer/search.html', {'form': form})
 
 
+def search_post(request):
+    if request.method == "POST":
+        form = SearchPost(request.POST)
+        if form.is_valid():
+            date = form.cleaned_data
+            return HttpResponseRedirect(reverse('influencer:resultpost', kwargs=date))
+    else:
+        form = SearchPost()
+
+    return render(request, 'influencer/search.html', {'form': form})
+
+
+def result_post(request, from_date, to_date):
+    posts = Post.objects.filter(created__gte=from_date).filter(created__lte=to_date)[:50]
+    paginator = Paginator(posts, 15)
+    page = request.GET.get('page')
+    context = {'posts': paginator.get_page(page)}
+    return render(request, 'influencer/listpost.html', context)
+
+
+def update_user(request):
+    if request.method == 'POST':
+        form = UpdateUserForm(request.POST)
+        if form.is_valid():
+            uid = form.cleaned_data['uid']
+            from_date = form.cleaned_data['from_date']
+            to_date = form.cleaned_data['to_date']
+            updateuser(uid, from_date, to_date)
+            return HttpResponseRedirect(reverse('influencer:updating'))
+    else:
+        form = UpdateUserForm()
+
+    return render(request, 'influencer/updateuser.html', {'form': form})
+
+
+def test(request):
+    token = os.environ['TOKEN']
+    context = {'token': token}
+    return render(request, 'influencer/test.html', context)
+
+
+def updating(request):
+    return render(request, 'influencer/updating.html')

@@ -1,4 +1,4 @@
-<h1>Top 10 Influencers on FaceBook</h1>
+<h1>Top 50 Facebook Influencers</h1>
 {% if top_users %}
 <ul>
     {% for user in top_users %}
@@ -8,5 +8,26 @@
 {% else %}
     <p>No user available</p>
 {% endif %}
+
+
+<div class="pagination">
+    <span class="step-links">
+        {% if top_users.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ top_users.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ top_users.number }} of {{ top_users.paginator.num_pages }}
+        </span>
+
+        {% if top_users.has_next %}
+            <a href="?page={{ top_users.next_page_number }}">next</a>
+            <a href="?page={{ top_users.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
 <h3><a href="{% url 'influencer:searchid' %}">Search user by Id?</a></h3>
 <h3><a href="{% url 'influencer:searchname' %}">Search user by Name?</a></h3>
+<h3><a href="{% url 'influencer:searchpost' %}">Search posts by Date?</a></h3>
