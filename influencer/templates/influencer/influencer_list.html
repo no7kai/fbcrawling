@@ -1,0 +1,9 @@
+<h1>Influencers</h1>
+
+<ul>
+{% for u in object_list %}
+    <li>{{u.id }} -{{u.name}} - {{u.fb_id}}</li>
+{% empty %}
+    <span>No influencers in db</span>
+{% endfor %}
+</ul>

@@ -1,22 +1,20 @@
 from django.db import models
 
-# Create your models here.
 
-
-class User(models.Model):
-    name = models.CharField(max_length=200)
+class Influencer(models.Model):
+    name = models.CharField(max_length=200) # => Maybe first name and last name, 2 fields
     uid = models.CharField(max_length=100, unique=True)
     followers = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.name
+        return "{} - {}".format(self.name, self.uid)
 
 
 class Post(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    influencer = models.ForeignKey(Influencer, on_delete=models.CASCADE)
     message = models.TextField()
     postid = models.CharField(max_length=100, unique=True)
-    created = models.DateTimeField('created time')
+    created = models.DateTimeField()
     likes = models.IntegerField(default=0)
     comments = models.IntegerField(default=0)
     shares = models.IntegerField(default=0)

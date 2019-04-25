@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import User, Post
+from .models import Influencer, Post
 from .forms import SearchIdForm, SearchNameForm, SearchPost, UpdateUserForm
 from django.http import HttpResponseRedirect
 from django.urls import reverse
@@ -9,8 +9,8 @@ from .updateuser import updateuser
 # Create your views here.
 
 
-def users(request):
-    top_users = User.objects.order_by('-followers')[:50]
+def index(request):
+    top_users = Influencer.objects.order_by('-followers')[:50]
     paginator = Paginator(top_users, 15)
     page = request.GET.get('page')
     context = {'top_users': paginator.get_page(page)}
@@ -18,7 +18,7 @@ def users(request):
 
 
 def personal(request, user_id):
-    user = get_object_or_404(User, pk=user_id)
+    user = get_object_or_404(Influencer, pk=user_id)
     top_posts = user.post_set.order_by('created')[:10]
     context = {'top_posts': top_posts, 'user': user}
     return render(request, 'influencer/personal.html', context)
@@ -30,8 +30,8 @@ def search_by_id(request):
         if form.is_valid():
             uid = form.cleaned_data['uid']
             try:
-                user = User.objects.get(uid=uid)
-            except User.DoesNotExist:
+                user = Influencer.objects.get(uid=uid)
+            except Influencer.DoesNotExist:
                 return HttpResponseRedirect(reverse('influencer:updateuser'))
             return HttpResponseRedirect(reverse('influencer:personal', args=(user.id,)))
     else:
@@ -45,7 +45,7 @@ def search_by_name(request):
         form = SearchNameForm(request.POST)
         if form.is_valid():
             name = form.cleaned_data['name']
-            users = User.objects.filter(name__contains=name).order_by('-followers')
+            users = Influencer.objects.filter(name__contains=name).order_by('-followers')
             context = {'users': users}
             return render(request, 'influencer/listname.html', context)
     else:
@@ -75,25 +75,11 @@ def result_post(request, from_date, to_date):
 
 
 def update_user(request):
-    if request.method == 'POST':
-        form = UpdateUserForm(request.POST)
-        if form.is_valid():
-            uid = form.cleaned_data['uid']
-            from_date = form.cleaned_data['from_date']
-            to_date = form.cleaned_data['to_date']
-            updateuser(uid, from_date, to_date)
-            return HttpResponseRedirect(reverse('influencer:updating'))
-    else:
-        form = UpdateUserForm()
-
+    form = UpdateUserForm(request.POST or None)
+    if form.is_valid():
+        uid = form.cleaned_data['uid']
+        from_date = form.cleaned_data['from_date']
+        to_date = form.cleaned_data['to_date']
+        updateuser(uid, from_date, to_date)
+        return HttpResponseRedirect(reverse('influencer:updating'))
     return render(request, 'influencer/updateuser.html', {'form': form})
-
-
-def test(request):
-    token = os.environ['TOKEN']
-    context = {'token': token}
-    return render(request, 'influencer/test.html', context)
-
-
-def updating(request):
-    return render(request, 'influencer/updating.html')

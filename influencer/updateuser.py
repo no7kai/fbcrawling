@@ -3,7 +3,7 @@ import requests
 # import csv
 # import logging
 import os
-from .models import User
+from .models import Influencer
 
 
 def updateuser(uid, from_date, to_date):
@@ -40,7 +40,7 @@ def updateuser(uid, from_date, to_date):
     res = s.get(name_url)
     r = res.json()
     name = r['name']
-    user = User.objects.create(name=name, uid=uid)
+    user = Influencer.objects.create(name=name, uid=uid)
     user.save()
     res = s.get(url)
     r = res.json()
