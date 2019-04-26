@@ -1,9 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
 <h1>Top 50 Facebook Influencers</h1>
 {% if top_users %}
 <ul>
     {% for user in top_users %}
-    <li><a href="{% url 'influencer:personal' user.id %}">
-    <h3>{{ user }}, {{ user.followers }} followers</h3></a></li>
+    <li><h3><a href="{% url 'influencer:personal' user.id %}">{{ user.name }} - {{ user.followers }} followers</a></h3></li>
     {% endfor %}
 {% else %}
     <p>No user available</p>
@@ -27,3 +29,4 @@
         {% endif %}
     </span>
 </div>
+{% endblock %}

@@ -1,13 +1,10 @@
-
-<h1>{{ user.name }}</h1>
-
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-{% if top_posts %}
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<h1>{{ user.name }} - {{ user.followers }} followers</h1>
 <ul>
-{% for post in top_posts %}
-    <li>{{ post.message }}</li>
-{% endfor %}
+    {% for post in top_posts %}
+        <li>{{ post.message }}</li>
+    {% endfor %}
 </ul>
-{% else %}
-<p>User has no posts</p>
-{% endif %}
+{% endblock %}

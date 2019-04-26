@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
     'django_extensions',
     'influencer',
+    'widget_tweaks',
 
 ]
 
