@@ -7,6 +7,7 @@ app_name = 'influencer'
 urlpatterns = [
     path('', views.index, name='index'),
     path('<int:id>/', views.personal, name='personal'),
-    path('search/', views.search, name='search'),
+    path('filter/', views.filter, name='filter'),
+
 
 ]

@@ -1,10 +1,32 @@
 {% extends "base.html" %}
 {% block title %}{{ title }}{% endblock %}
 {% block content %}
-<h1>{{ user.name }} - {{ user.followers }} followers</h1>
-<ul>
-    {% for post in top_posts %}
-        <li>{{ post.message }}</li>
-    {% endfor %}
-</ul>
+<h3>{{ user.name }} - {{ user.followers }} followers</h3>
+
+<table class="table table-bordered">
+<thead>
+  <tr>
+    <th>Post_id</th>
+    <th>Message</th>
+    <th>Created_time</th>
+    <th>Likes</th>
+  </tr>
+</thead>
+<tbody>
+  {% for post in top_posts %}
+    <tr>
+      <td>{{ post.postid }}</td>
+      <td>{{ post.message }}</td>
+      <td>{{ post.created }}</td>
+      <td>{{ post.likes }}</td>
+    </tr>
+  {% empty %}
+    <tr>
+      <td colspan="5">No data</td>
+    </tr>
+  {% endfor %}
+</tbody>
+</table>
+
+
 {% endblock %}

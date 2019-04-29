@@ -2,31 +2,51 @@
 {% block title %}{{ title }}{% endblock %}
 {% block content %}
 <h1>Top 50 Facebook Influencers</h1>
+<h4><a href="{% url 'influencer:filter' %}">Filter posts</a></h4>
 {% if top_users %}
-<ul>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Followers</th>
+      <th>Uid</th>
+    </tr>
+  </thead>
+  <tbody>
     {% for user in top_users %}
-    <li><h3><a href="{% url 'influencer:personal' user.id %}">{{ user.name }} - {{ user.followers }} followers</a></h3></li>
+      <tr>
+        <td><a href="{% url 'influencer:personal' user.id %}">{{ user.name }}</a></td>
+        <td>{{ user.followers }}</td>
+        <td>{{ user.uid }}</td>
+      </tr>
     {% endfor %}
-{% else %}
-    <p>No user available</p>
+  </tbody>
+</table>
 {% endif %}
 
 
-<div class="pagination">
-    <span class="step-links">
-        {% if top_users.has_previous %}
-            <a href="?page=1">&laquo; first</a>
-            <a href="?page={{ top_users.previous_page_number }}">previous</a>
-        {% endif %}
+{% if top_users.has_other_pages %}
+  <ul class="pagination">
+    {% if top_users.has_previous %}
+      <li><a href="?page={{ top_users.previous_page_number }}">&laquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in top_users.paginator.page_range %}
+      {% if top_users.number == i %}
+        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+      {% else %}
+        <li><a href="?page={{ i }}">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if top_users.has_next %}
+      <li><a href="?page={{ top_users.next_page_number }}">&raquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+  </ul>
+{% endif %}
 
-        <span class="current">
-            Page {{ top_users.number }} of {{ top_users.paginator.num_pages }}
-        </span>
 
-        {% if top_users.has_next %}
-            <a href="?page={{ top_users.next_page_number }}">next</a>
-            <a href="?page={{ top_users.paginator.num_pages }}">last &raquo;</a>
-        {% endif %}
-    </span>
-</div>
 {% endblock %}
