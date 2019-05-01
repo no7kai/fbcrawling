@@ -9,5 +9,4 @@ urlpatterns = [
     path('<int:id>/', views.personal, name='personal'),
     path('filter/', views.filter, name='filter'),
 
-
 ]

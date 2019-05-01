@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'influencer',
     'widget_tweaks',
+    'fbadds',
 
 ]
 

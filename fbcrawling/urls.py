@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('fbadds/', include('fbadds.urls')),
     path('influencer/', include('influencer.urls')),
     path('admin/', admin.site.urls),
 ]

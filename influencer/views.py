@@ -29,8 +29,11 @@ def personal(request, id):
 def filter(request):
     post_list = Post.objects.all()
     post_filter = PostFilter(request.GET, queryset=post_list)
-    qs = post_filter.qs
-    paginator = Paginator(post_filter.qs, 15)
+    paginator = Paginator(post_filter.qs, 1)
     page = request.GET.get('page')
-    context = {'title': 'Filter', 'filter': post_filter, 'queryset': paginator.get_page(page)}
+    context = {
+        'title': 'Filter',
+        'filter': post_filter,
+        'queryset': paginator.get_page(page)
+    }
     return render(request, 'influencer/post_list.html', context)

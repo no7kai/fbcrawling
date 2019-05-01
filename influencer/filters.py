@@ -4,6 +4,7 @@ import django_filters
 
 class PostFilter(django_filters.FilterSet):
     message = django_filters.CharFilter(lookup_expr='icontains')
+    postid = django_filters.CharFilter(lookup_expr='contains')
     created__lt = django_filters.DateTimeFilter(
         field_name='created',
         lookup_expr='lt')
@@ -19,6 +20,7 @@ class PostFilter(django_filters.FilterSet):
 
     class Meta:
         model = Post
+        ordering = ['-likes']
         fields = [
             'message',
             'created__lt',

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<h1>Facebook Adds Pages</h1>
+
+<h4><a href='https://google.com'>Find other page's ads</a></h4>
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Page</th>
+      <th>PageId</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for page in pages %}
+      <tr>
+        <td><a href="{% url 'fbadds:singlepage' page.id %}">{{ page.name }}</a></td>
+        <td>{{ page.pageid }}</td>
+      </tr>
+    {% empty %}
+        <tr>
+          <td colspan="5">No data</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+{% if pages.has_other_pages %}
+  <ul class="pagination">
+    {% if pages.has_previous %}
+      <li><a href="?page={{ pages.previous_page_number }}">&laquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in pages.paginator.page_range %}
+      {% if pages.number == i %}
+        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+      {% else %}
+        <li><a href="?page={{ i }}">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if pages.has_next %}
+      <li><a href="?page={{ pages.next_page_number }}">&raquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+  </ul>
+{% endif %}
+
+
+{% endblock %}
