@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method='POST' action='.'>{% csrf_token %}
+    <h3>Enter Facebook Page id</h3>
+    <div>{{ form }}</div>
+
+    <button type="submit" class="btn btn-primary">
+        <span class="glyphicon glyphicon-search"></span> Submit
+    </button>
+</form>
+<p><a href="https://findmyfbid.com/" target="_blank">Don't know that page id? Click here.</a></p>
+
+{% if error %}
+<h4>{{ error }}</h4>
+{% endif %}
+
+{% endblock %}

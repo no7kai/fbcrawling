@@ -10,15 +10,19 @@
     <th>Content</th>
     <th>Created_time</th>
     <th>Likes</th>
+    <th>Shares</th>
+    <th>Cmt</th>
   </tr>
 </thead>
 <tbody>
   {% for ad in ads %}
     <tr>
-      <td>{{ ad.addid }}</td>
+      <td><a href="https://www.facebook.com/{{ ad.addid }}" target="_blank">{{ ad.addid }}</a></td>
       <td>{{ ad.content }}</td>
       <td>{{ ad.created_time }}</td>
       <td>{{ ad.likes }}</td>
+      <td>{{ ad.shares }}</td>
+      <td>{{ ad.comments }}</td>
     </tr>
   {% empty %}
     <tr>

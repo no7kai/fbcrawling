@@ -5,11 +5,11 @@ from .models import Page, Adds
 
 
 class PageAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'pageid')
+    list_display = ('id', 'name', 'pageid', 'ads')
 
 
 class AddsAdmin(admin.ModelAdmin):
-    list_display = ('id', 'created_time', 'likes', 'shares', 'comments')
+    list_display = ('id', 'page', 'created_time', 'likes', 'shares', 'comments')
 
 
 admin.site.register(Page, PageAdmin)

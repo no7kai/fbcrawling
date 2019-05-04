@@ -1,0 +1,336 @@
+2019-05-03 02:35:35,491 - FB_posts - ERROR - Cannot find likes - 1077080029101558_1510050362471187
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 83, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 02:35:35,493 - FB_posts - ERROR - Cannot find shares - 1077080029101558_1510050362471187
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 88, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 02:44:45,132 - FB_posts - ERROR - Cannot find likes - 1077080029101558_1510050362471187
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 83, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 02:44:45,134 - FB_posts - ERROR - Cannot find shares - 1077080029101558_1510050362471187
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 88, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 02:44:45,147 - FB_posts - INFO - Finish crawling Ads
+2019-05-03 03:12:30,345 - FB_ads - INFO - Logging in successful.
+2019-05-03 03:12:44,090 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'uiHeaderImage')]
+
+2019-05-03 03:12:46,099 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'autofocus layerCancel')]
+
+2019-05-03 03:13:45,592 - FB_ads - INFO - Got 38 ads from Page
+2019-05-03 03:13:46,870 - FB_ads - INFO - Finish crawling Fb ads from input page!
+2019-05-03 03:58:41,072 - FB_posts - INFO - Finish crawling Ads
+2019-05-03 04:10:29,913 - FB_ads - INFO - Logging in successful.
+2019-05-03 04:10:41,248 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'uiHeaderImage')]
+
+2019-05-03 04:10:43,265 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'autofocus layerCancel')]
+
+2019-05-03 04:11:42,776 - FB_ads - INFO - Got 38 ads from Page
+2019-05-03 04:11:44,737 - FB_ads - INFO - Finish crawling Fb ads from input page!
+2019-05-03 04:11:46,251 - FB_posts - ERROR - Cannot find shares - 481609292234831_751916201870804
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:46,531 - FB_posts - ERROR - Cannot find shares - 481609292234831_757084448020646
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:46,799 - FB_posts - ERROR - Cannot find shares - 481609292234831_757084448020646
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:47,237 - FB_posts - ERROR - Cannot find shares - 481609292234831_757095028019588
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:49,057 - FB_posts - ERROR - Cannot find shares - 481609292234831_1134043546766425
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:49,334 - FB_posts - ERROR - Cannot find likes - 481609292234831_757107841351640
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 85, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 04:11:49,335 - FB_posts - ERROR - Cannot find shares - 481609292234831_757107841351640
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:49,610 - FB_posts - ERROR - Cannot find likes - 481609292234831_757262834669474
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 85, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 04:11:49,611 - FB_posts - ERROR - Cannot find shares - 481609292234831_757262834669474
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:49,908 - FB_posts - ERROR - Cannot find likes - 481609292234831_757258391336585
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 85, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 04:11:49,908 - FB_posts - ERROR - Cannot find shares - 481609292234831_757258391336585
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:50,188 - FB_posts - ERROR - Cannot find shares - 481609292234831_757455954650162
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:50,477 - FB_posts - ERROR - Cannot find likes - 481609292234831_357078328246870
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 85, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 04:11:50,478 - FB_posts - ERROR - Cannot find shares - 481609292234831_357078328246870
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:50,782 - FB_posts - ERROR - Cannot find shares - 481609292234831_757453817983709
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:51,089 - FB_posts - ERROR - Cannot find shares - 481609292234831_757240978004993
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:51,383 - FB_posts - ERROR - Cannot find shares - 481609292234831_757238868005204
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:51,657 - FB_posts - ERROR - Cannot find shares - 481609292234831_757238868005204
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:51,949 - FB_posts - ERROR - Cannot find shares - 481609292234831_757128804682877
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:52,729 - FB_posts - ERROR - Cannot find shares - 481609292234831_757134301348994
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:53,017 - FB_posts - ERROR - Cannot find shares - 481609292234831_757115561350868
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:53,303 - FB_posts - ERROR - Cannot find likes - 481609292234831_757262834669474
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 85, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 04:11:53,304 - FB_posts - ERROR - Cannot find shares - 481609292234831_757262834669474
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:53,586 - FB_posts - ERROR - Cannot find shares - 481609292234831_757269408002150
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:53,875 - FB_posts - ERROR - Cannot find shares - 481609292234831_757112254684532
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:54,181 - FB_posts - ERROR - Cannot find likes - 481609292234831_757107841351640
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 85, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 04:11:54,182 - FB_posts - ERROR - Cannot find shares - 481609292234831_757107841351640
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:54,461 - FB_posts - ERROR - Cannot find shares - 481609292234831_757134301348994
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:54,735 - FB_posts - ERROR - Cannot find shares - 481609292234831_757453817983709
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:55,013 - FB_posts - ERROR - Cannot find shares - 481609292234831_757240978004993
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:55,289 - FB_posts - ERROR - Cannot find shares - 481609292234831_757112254684532
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:55,558 - FB_posts - ERROR - Cannot find likes - 481609292234831_357078328246870
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 85, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 04:11:55,559 - FB_posts - ERROR - Cannot find shares - 481609292234831_357078328246870
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:55,837 - FB_posts - ERROR - Cannot find shares - 481609292234831_757128804682877
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:56,120 - FB_posts - ERROR - Cannot find shares - 481609292234831_1134043546766425
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:56,524 - FB_posts - ERROR - Cannot find shares - 481609292234831_757115561350868
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:56,795 - FB_posts - ERROR - Cannot find shares - 481609292234831_757455954650162
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:57,166 - FB_posts - ERROR - Cannot find likes - 481609292234831_757258391336585
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 85, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 04:11:57,167 - FB_posts - ERROR - Cannot find shares - 481609292234831_757258391336585
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:57,481 - FB_posts - ERROR - Cannot find likes - 481609292234831_757458034649954
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 85, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 04:11:57,481 - FB_posts - ERROR - Cannot find shares - 481609292234831_757458034649954
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:11:57,486 - FB_posts - INFO - Finish crawling Ads
+2019-05-03 04:43:49,076 - FB_ads - INFO - Logging in successful.
+2019-05-03 04:44:02,980 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'uiHeaderImage')]
+
+2019-05-03 04:44:04,995 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'autofocus layerCancel')]
+
+2019-05-03 04:45:04,466 - FB_ads - INFO - Got 4 ads from Page
+2019-05-03 04:45:05,320 - FB_ads - INFO - Finish crawling Fb ads from input page!
+2019-05-03 04:45:07,992 - FB_posts - ERROR - Cannot find shares - 662712117164829_1580471828722182
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 04:45:07,999 - FB_posts - INFO - Finish crawling Ads
+2019-05-03 08:26:46,467 - FB_ads - INFO - Logging in successful.
+2019-05-03 08:26:58,080 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'uiHeaderImage')]
+
+2019-05-03 08:27:00,096 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'autofocus layerCancel')]
+
+2019-05-03 08:27:59,534 - FB_ads - INFO - Got 15 ads from Page
+2019-05-03 08:28:00,458 - FB_ads - INFO - Finish crawling Fb ads from input page!
+2019-05-03 08:28:04,887 - FB_posts - ERROR - Cannot find shares - 172346716791661_2063085273804439
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 08:28:05,186 - FB_posts - ERROR - Cannot find shares - 172346716791661_335020863857578
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 08:28:05,805 - FB_posts - ERROR - Cannot find shares - 172346716791661_335020690524262
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 08:28:06,629 - FB_posts - ERROR - Cannot find shares - 172346716791661_339097933449871
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 08:28:07,376 - FB_posts - ERROR - Cannot find shares - 172346716791661_338240616868936
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 08:28:07,676 - FB_posts - ERROR - Cannot find shares - 172346716791661_338240690202262
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 08:28:08,683 - FB_posts - ERROR - Cannot find shares - 172346716791661_339078086785189
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 08:28:08,953 - FB_posts - ERROR - Cannot find shares - 172346716791661_339072613452403
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 08:28:09,235 - FB_posts - ERROR - Cannot find likes - 172346716791661_338708873488777
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 85, in get_adslsm
+    like = r['likes']['count']
+KeyError: 'likes'
+2019-05-03 08:28:09,235 - FB_posts - ERROR - Cannot find shares - 172346716791661_338708873488777
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 08:28:09,506 - FB_posts - ERROR - Cannot find shares - 172346716791661_338705173489147
+Traceback (most recent call last):
+  File "/media/no7kai/JAV/Django_friststep/fbcrawling/fbadds/get_adslsc.py", line 90, in get_adslsm
+    share = r['shares']['count']
+KeyError: 'shares'
+2019-05-03 08:28:09,515 - FB_posts - INFO - Finish crawling Ads
+2019-05-03 09:05:19,096 - FB_ads - INFO - Logging in successful.
+2019-05-03 09:12:14,526 - FB_ads - INFO - Logging in successful.
+2019-05-03 09:31:49,258 - FB_ads - INFO - Logging in successful.
+2019-05-03 09:32:27,145 - FB_ads - INFO - Logging in successful.
+2019-05-03 09:32:27,145 - FB_ads - INFO - Logging in successful.
+2019-05-03 09:32:38,276 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'uiHeaderImage')]
+
+2019-05-03 09:32:38,276 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'uiHeaderImage')]
+
+2019-05-03 09:32:40,295 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'autofocus layerCancel')]
+
+2019-05-03 09:32:40,295 - FB_ads - ERROR - Message: Unable to locate element: //*[contains(@class, 'autofocus layerCancel')]
+
+2019-05-03 09:33:39,768 - FB_ads - INFO - Got 6 ads from Page
+2019-05-03 09:33:39,768 - FB_ads - INFO - Got 6 ads from Page
+2019-05-03 09:33:42,032 - FB_ads - INFO - Finish crawling Fb ads from input page!
+2019-05-03 09:33:42,032 - FB_ads - INFO - Finish crawling Fb ads from input page!
+2019-05-03 09:33:44,968 - FB_posts - INFO - Finish crawling Ads

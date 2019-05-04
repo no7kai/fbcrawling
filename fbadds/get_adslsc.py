@@ -4,6 +4,8 @@ import time
 import logging
 from .models import Page
 
+from django.conf import settings
+
 
 def get_adslsm(pageid, list_adsid):
 
@@ -12,15 +14,14 @@ def get_adslsm(pageid, list_adsid):
     s.mount('https://', adapter)
 
     # Get token from .evn file
-    token = os.environ['TOKEN']
-
-    today = '2019-05-01'
+    token = settings.FB_TOKEN
+    today = time.strftime('%Y-%m-%d')
 
     # start logging
     logger = logging.getLogger('FB_posts')
     logger.setLevel(logging.INFO)
     c_handler = logging.StreamHandler()
-    f_handler = logging.FileHandler('/media/no7kai/Data/Django/dOne/fbcrawling/log/{}_ads.log'.format(today))
+    f_handler = logging.FileHandler('/media/no7kai/JAV/Django_friststep/fbcrawling/log/{}_ads.log'.format(today))
     f_handler.setLevel(logging.INFO)
     f_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     f_handler.setFormatter(f_format)
@@ -76,43 +77,43 @@ def get_adslsm(pageid, list_adsid):
 
         # Get Ads attributes
         try:
-            time = r['created_time']
+            created = r['created_time']
         except KeyError:
             logger.exception('Cannot find created time - {}'.format(ads_id))
-            time = None
+            created = None
         try:
             like = r['likes']['count']
         except KeyError:
             logger.exception('Cannot find likes - {}'.format(ads_id))
-            like = None
+            like = 0
         try:
             share = r['shares']['count']
         except KeyError:
             logger.exception('Cannot find shares - {}'.format(ads_id))
-            share = None
+            share = 0
         try:
             comment = r['comments']['count']
         except KeyError:
             logger.exception('Cannot find comments - {}'.format(ads_id))
-            comment = None
+            comment = 0
         try:
             content = r['message']
         except KeyError:
             logger.exception('Cannot find content - {}'.format(ads_id))
-            content = None
+            content = ''
 
         # Create Ads, if exists update instead
         try:
             page.adds_set.create(addid=ads_id,
                                  content=content,
-                                 created_time=time,
+                                 created_time=created,
                                  likes=like,
                                  shares=share,
                                  comments=comment)
         except Exception:
             ads = page.adds_set.get(addid=ads_id)
             ads.content = content
-            ads.created_time = time
+            ads.created_time = created
             ads.likes = like
             ads.shares = share
             ads.comments = comment

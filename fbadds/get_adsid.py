@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 import time
 import logging
+import requests
 
 
 def get_adsid(pageid):
@@ -25,7 +26,7 @@ def get_adsid(pageid):
     logger.setLevel(logging.INFO)
     c_handler = logging.StreamHandler()
     c_handler.setLevel(logging.INFO)
-    f_handler = logging.FileHandler('/media/no7kai/Data/Django/dOne/fbcrawling/log/{}_ads.log'.format(today))
+    f_handler = logging.FileHandler('/media/no7kai/JAV/Django_friststep/fbcrawling/log/{}_ads.log'.format(today))
     f_handler.setLevel(logging.INFO)
     f_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     f_handler.setFormatter(f_format)
@@ -35,7 +36,7 @@ def get_adsid(pageid):
 
     options = Options()
     options.headless = True
-    driver = webdriver.Firefox(firefox_options=options, executable_path='/media/no7kai/Data/Django/dOne/fbcrawling/geckodriver')
+    driver = webdriver.Firefox(firefox_options=options, executable_path='/media/no7kai/JAV/Django_friststep/fbcrawling/geckodriver')
     # # Get list of accounts
     # user_ls = []
     # with open('user_list.txt') as f:
@@ -61,6 +62,9 @@ def get_adsid(pageid):
     # Open list 50 Beauty pages
     list_id = []
     url = 'https://www.facebook.com/{}/ads'.format(pageid)
+    res = requests.get(url)
+    if res.status_code != 200:
+        return "Oops! Page isn't available or bad connection. Please check again."
 
     # Open url again, click to "Ads" tab then load page
     driver.get(url)

@@ -234,3 +234,325 @@ JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js,
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 1556704030939	Marionette	INFO	Stopped listening on port 35927
+1556853135494	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.syT7KETvlIyF"
+*** You are running in headless mode.
+1556853136043	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556853136044	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556853136044	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556853138554	Marionette	INFO	Listening on port 34893
+1556853138652	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1556853226053	Marionette	INFO	Stopped listening on port 34893
+[Parent 21752, Gecko_IOThread] WARNING: pipe error (74): Connection reset by peer: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Child 21932, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Child 21932, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Child 21932, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Child 21932, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Child 21932, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Child 21932, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1556856617405	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fqv8oOHM3PLI"
+*** You are running in headless mode.
+1556856617685	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556856617686	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556856617686	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556856619552	Marionette	INFO	Listening on port 38697
+1556856619617	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1556856703923	Marionette	INFO	Stopped listening on port 38697
+[Child 30145, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Child 30145, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Child 30145, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1556858594481	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.a0iDsHccEWLT"
+*** You are running in headless mode.
+1556858594759	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556858594760	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556858594760	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556858596688	Marionette	INFO	Listening on port 40167
+1556858596790	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1556858704625	Marionette	INFO	Stopped listening on port 40167
+[Parent 32338, Gecko_IOThread] WARNING: pipe error (65): Connection reset by peer: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1556871989167	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.egkXoDNHsxCY"
+*** You are running in headless mode.
+1556871989458	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556871989459	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556871989459	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556871991317	Marionette	INFO	Listening on port 39307
+1556871991375	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+[Parent 9256, Gecko_IOThread] WARNING: pipe error (163): Connection reset by peer: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1556872079775	Marionette	INFO	Stopped listening on port 39307
+[Parent 9256, Gecko_IOThread] WARNING: pipe error (65): Connection reset by peer: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1556874307287	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fFfLd5tM6XhC"
+*** You are running in headless mode.
+1556874307569	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556874307570	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556874307570	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556874309327	Marionette	INFO	Listening on port 46493
+1556874309394	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1556874708342	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.nVtHM4kkZ2Gh"
+*** You are running in headless mode.
+1556874708616	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556874708617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556874708617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556874710477	Marionette	INFO	Listening on port 42961
+1556874710552	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1556875878780	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.aFznzwP0hWs1"
+*** You are running in headless mode.
+1556875879061	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556875879061	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556875879061	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556875880868	Marionette	INFO	Listening on port 43563
+1556875880889	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1556875930969	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.GHPrzVyzyqy9"
+*** You are running in headless mode.
+1556875931258	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556875931258	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556875931258	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556875933380	Marionette	INFO	Listening on port 41595
+1556875933505	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/2VB0VDfSp1N.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+[Parent 15419, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Parent 15419, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Parent 15419, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Parent 15419, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Parent 15419, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/psk5y6SAh_0.js, line 4: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1556876019948	Marionette	INFO	Stopped listening on port 41595
+[Parent 15740, Gecko_IOThread] WARNING: pipe error (65): Connection reset by peer: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 13859, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 13836, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 15588, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 15566, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 13186, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-KBLXnC/firefox-66.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+Exiting due to channel error.

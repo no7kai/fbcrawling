@@ -1,55 +1,85 @@
 {% extends "base.html" %}
+
+{% load widget_tweaks %}
+
 {% block title %}{{ title }}{% endblock %}
 {% block content %}
-<h1>Facebook Adds Pages</h1>
+  <form method="get">
+    <h3 style="margin-top: 0">Facebook Beauty Pages</h3>
+    <h4><a href="{% url 'fbadds:find' %}">Find other page's ads</a></h4>
+    <div class="well">
+      <div class="row">
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.name.label_tag }}
+          {% render_field filter.form.name class="form-control" %}
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </div>
+  </form>
 
-<h4><a href='https://google.com'>Find other page's ads</a></h4>
-
-
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Page</th>
-      <th>PageId</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for page in pages %}
+  <table class="table table-bordered">
+    <thead>
       <tr>
-        <td><a href="{% url 'fbadds:singlepage' page.id %}">{{ page.name }}</a></td>
-        <td>{{ page.pageid }}</td>
+        <th>Page</th>
+        <th>Num Ads</th>
+        <th>Pageid</th>
       </tr>
-    {% empty %}
+    </thead>
+    <tbody>
+      {% for page in queryset %}
+        <tr>
+          <td><a href="{% url 'fbadds:singlepage' page.slug %}">{{ page.name }}</td>
+          <td>{{ page.ads }}</td>
+          <td>{{ page.pageid }}</td>
+        </tr>
+      {% empty %}
         <tr>
           <td colspan="5">No data</td>
         </tr>
-    {% endfor %}
-  </tbody>
-</table>
+      {% endfor %}
+    </tbody>
+  </table>
 
+<div class="pagination">
+    <span class="step-links">
+        {% if "message" in request.get_full_path %}
 
+            {% if queryset.has_previous %}
+                <a href="{{  request.get_full_path }}&page=1">&laquo; first</a>
+                <a href="{{ request.get_full_path }}&page={{ queryset.previous_page_number }}">previous</a>
+            {% endif %}
 
-{% if pages.has_other_pages %}
-  <ul class="pagination">
-    {% if pages.has_previous %}
-      <li><a href="?page={{ pages.previous_page_number }}">&laquo;</a></li>
-    {% else %}
-      <li class="disabled"><span>&laquo;</span></li>
-    {% endif %}
-    {% for i in pages.paginator.page_range %}
-      {% if pages.number == i %}
-        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
-      {% else %}
-        <li><a href="?page={{ i }}">{{ i }}</a></li>
-      {% endif %}
-    {% endfor %}
-    {% if pages.has_next %}
-      <li><a href="?page={{ pages.next_page_number }}">&raquo;</a></li>
-    {% else %}
-      <li class="disabled"><span>&raquo;</span></li>
-    {% endif %}
-  </ul>
-{% endif %}
+            <span class="current">
+                Page {{ queryset.number }} of {{ queryset.paginator.num_pages }}
+            </span>
 
+            {% if queryset.has_next %}
+                <a href="{{ request.get_full_path }}&page={{ queryset.next_page_number }}">next</a>
+                <a href="{{ request.get_full_path }}&page={{ queryset.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
 
+        {% else %}
+
+            {% if queryset.has_previous %}
+                <a href="?page=1">&laquo; first</a>
+                <a href="?page={{ queryset.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ queryset.number }} of {{ queryset.paginator.num_pages }}
+            </span>
+
+            {% if queryset.has_next %}
+                <a href="?page={{ queryset.next_page_number }}">next</a>
+                <a href="?page={{ queryset.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+
+        {% endif %}
+
+    </span>
+</div>
+  
 {% endblock %}
